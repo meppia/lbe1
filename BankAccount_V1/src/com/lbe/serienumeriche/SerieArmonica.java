@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.IntToDoubleFunction;
 
-
+//commento
 
 public class SerieArmonica {
 	//dato n, memorizza elementi della serie, 1/n^2
