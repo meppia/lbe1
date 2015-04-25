@@ -47,7 +47,12 @@ public class Persona {
 	}
 	@Override
 	public String toString() {
-		
+		StringBuffer sb = new StringBuffer();
+		sb.append("nome: " ).append(nome).append("\ncognome: ").append(cognome).append("\ndata di nascita: ").append(nascita);
+		return sb.toString();
+	}
+	
+	public void EqualsPersona (String nome, String cognome, String nascita) {
 		
 	}
 }

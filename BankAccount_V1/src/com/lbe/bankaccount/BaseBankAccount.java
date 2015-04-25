@@ -2,6 +2,7 @@ package com.lbe.bankaccount;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Iterator;
 
 public class BaseBankAccount {
 	private BigDecimal accountBalance = BigDecimal.ZERO;
@@ -34,9 +35,19 @@ public class BaseBankAccount {
 		
 	}
 	
-	
+	public BigDecimal getAccountBalance() {
+		return accountBalance;
+	}
 
 	protected BigDecimal add(double amount)throws BankOperationNotPermitted {
+	/*	for (Integer variabileACaso : listaACasoDiInteri) {
+			//anche con array primitivi
+		}
+		for (Iterator iterator = collection.iterator(); iterator.hasNext();) {
+			type type = (type) iterator.next();
+			iterator. //non con array primitivi 
+			
+		}*/
 		return add(new BigDecimal(amount));
 		
 	}
@@ -72,4 +83,5 @@ public class BaseBankAccount {
 			
 		
 	}
+	
 }

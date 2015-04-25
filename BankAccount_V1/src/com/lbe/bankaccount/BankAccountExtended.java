@@ -23,5 +23,12 @@ public class BankAccountExtended extends BaseBankAccount {
 	public void setTitolare(Persona titolare) {
 		this.titolare = titolare;
 	}
+	@Override
+	public String toString() {
+		StringBuffer sb = new StringBuffer();
+		sb.append("Codice: ").append(getAccountCode()).append("\nBilancio: ").append(getAccountBalance());
+		sb.append(titolare);
+		return sb.toString();
+	}
 	
 }
